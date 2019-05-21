@@ -1,0 +1,191 @@
+/* CSS Style Sheet for the Basic Portfolio web project */
+/*   Homework for Penn LPS Coding BootCamp             */
+/*   Completed by Nathan Hill                          */
+body {
+    /* sets the basic style for the basic elements of the page, including backgrounds and primary font */
+    background-image: url("../images/interlaced.png");
+    /* Background image sourced from https://subtlepatterns.com/ */
+    background-color: #aaaaaa;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2px;
+}
+
+.content {
+    /* set the basics for the main container element of the page, used to hold the primary content */
+    width: 920px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    margin: auto;
+    border: solid 1px #dddddd;
+    clear: both;
+}
+
+header {
+    /* Set the style for the main header element of the page */
+    background-color: #ffffff;
+    padding-top:20px;
+    padding-bottom:10px;
+    margin-bottom:40px;
+    vertical-align: bottom;
+    border-bottom: solid 2px #cccccc;
+}
+
+.header-content {
+    /* Used this as a container to set the width of the header content to match the width of the body content */
+    margin:auto;
+    max-width: 960px;
+}
+
+.about-me {
+    /* Set a style for the main header (my name) used on each page */
+    display:inline;
+    background-color: #8da0b4;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36pt;
+    padding: 10px;
+}
+
+h2 {
+    /* Set a style for the page header on each individual page */
+    color: #576470;
+    font-size: 28pt;
+    font-style: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+}
+
+nav {
+    /* set the float positioning for the nav buttons so they stay to the right of the header */
+    float: right;
+}
+
+#bio {
+    /* id to single out the picture for the short bio */
+    float:left;
+    height: 250px;
+    width: 250px;
+    padding:10px;
+}
+
+.container {
+    /* Container DIV to allow appropriate positioning of project text */
+    position:relative;
+}
+
+.portfolio-label {
+    /* used to label the projects in the portfolio, absolute positioning to overlap the pictures chosen for each project */
+    position:absolute;
+    text-align: center;
+    vertical-align: center;
+    font-size: 20px;
+    padding: 20px;
+    color: #ffffff;
+    background-color: rgba(131, 161, 201, 0.5);
+    width: 293px;
+    top: 150px;
+    left: 0;
+}
+
+footer {
+    /* Defines formatting for the footer, which I was not able to make sticky, but I'm sure we will get there */
+    margin-top: 40px;
+    text-align:center;
+    background-color: #666666;
+    padding: 30px;
+    border-top: 8px solid;
+    border-color: #8da0b4;
+    color: #9cb4cb;
+}
+
+button {
+    /* Here I am using this to define formatting for the nav bar buttons. 
+       If I was using more buttons elsewhere, I would use a specific class 
+       here, but since I am not I figured this would be easier                */
+    background-color: #ffffff;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    width: 80px;
+    text-align: center;
+}
+
+button:hover {
+    /* a nice little hover element for the nav buttons */
+    background-color: #8da0b4   ;
+    color: #bad7f3;
+}
+
+form {
+    /* just some basic formatting for the form on the contact page. 
+       I would use a class or ID here if I had more forms on my page
+       but since I don't this was simplest to use                      */
+    padding: 20px;
+}
+
+img.portfolio {
+    /* this image class is used to define the portfolio images. I am using a 
+       fixed width so that the overlapping div element and this are the same size */
+    height: 250px;
+    width: 333px;
+}
+
+td {
+    /* some basic formatting for the table elements */
+    margin:20px;
+    padding: 20px;
+}
+
+/* This final section is a bunch of formatting for the form elements on the contact page */
+
+input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    border: solid 2px #dddddd;
+    border-radius: 5px;
+}
+
+input[type=email] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    border: solid 2px #dddddd;
+    border-radius: 5px;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    border: solid 2px #dddddd;
+    border-radius: 5px;
+    resize: none;
+    vertical-align: top;
+}
+
+.formbutton {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #8da0b4;
+    color: #ffffff;
+    border: solid 2px #666666;
+    font-size: 16px;
+    width:80px;
+    text-align: center;
+}
+
+/* input[type=reset] {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #8da0b4;
+    color: #ffffff;
+    border: solid 2px #666666;
+    font-size: 16px;
+    width: 80px;
+    text-align: center;
+} */

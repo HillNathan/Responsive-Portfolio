@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <!-- Include style sheet -->
+
+</head>
+<body>
+        <header> 
+            <!--Had to split header and header content to make the width of the header content work. not sure this is the best way to 
+                do it, but it is the way that worked for me-->
+            <div class="header-content">
+                <div class="about-me">  
+                    Nathan Hill
+                </div>
+    
+                <nav>
+                    <!-- I have the style for the nav bar section set to float right, which puts this info all the way to the right of 
+                         the header section. -->
+                         <a href="index.html"><button>About</button></a>
+                         <a href="portfolio.html"><button>Portfolio</button></a>
+                         <a href="contact.html"><button>Contact</button></a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="content">
+                <h2>Contact Me</h2>
+                <hr>
+            <form>
+                <!-- This form doesn't actually do anything, since functionality was not specified in the homework. -->
+                <!-- I did look up how to do it, but decided to leave it out of the project for simplicity's sake.  -->
+                <p>
+                    Name: <br>
+                    <input type="text" name="name">
+                </p>
+                <p>
+                    Email Address: <br>
+                    <input type="email" name="email_address">
+                </p>
+                <p>
+                    Message: <br>
+                    <textarea name="message" rows="10">Form does not function. This is just a placeholder until I learn how to make it work.</textarea>
+                </p>
+                <br>
+                <input type="submit" name="submit" class="formbutton">
+                <input type="reset" name="reset" class="formbutton">
+                <br>
+            </form>
+
+        </div>
+
+        <footer>
+            Copyright &copy 2019 Nathan Hill
+        </footer>
+</body>
+</html>
