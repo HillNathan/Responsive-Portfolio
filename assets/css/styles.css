@@ -21,6 +21,7 @@ body {
     margin: auto;
     border: solid 1px #dddddd;
     clear: both;
+    margin-bottom: 120px;
 }
 
 header {
@@ -76,6 +77,19 @@ nav {
     position:relative;
 }
 
+@keyframes tappit{
+    /* A fun animation for the footer!!! */
+    from {transform: rotate(-1deg); }
+    to {transform: rotate(-10deg); }
+}
+
+.container:hover {
+    animation-name: tappit;
+    animation-duration: 1s;
+    transform: rotate(-10deg);
+}
+
+
 .portfolio-label {
     /* used to label the projects in the portfolio, absolute positioning to overlap the pictures chosen for each project */
     position:absolute;
@@ -90,15 +104,33 @@ nav {
     left: 0;
 }
 
+
+@keyframes expansion{
+    /* A fun animation for the footer!!! */
+    0%   {font-size: 14pt;}
+    25%  {font-size: 20pt; }
+    50%  {font-size: 30pt; }
+    75%  {font-size: 20pt;}
+    100% {font-size: 14pt;}
+}
+
 footer {
-    /* Defines formatting for the footer, which I was not able to make sticky, but I'm sure we will get there */
+    /* Defines formatting for the sticky footer */
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    height: 80px;
     margin-top: 40px;
     text-align:center;
+    padding-top: 20px;
     background-color: #666666;
-    padding: 30px;
+    /* padding: 30px; */
     border-top: 8px solid;
     border-color: #8da0b4;
     color: #9cb4cb;
+    font-size: 14pt;
+    animation-name: expansion;
+    animation-duration: 4s;
 }
 
 button {
