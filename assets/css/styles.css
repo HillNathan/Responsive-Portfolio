@@ -59,10 +59,7 @@ h2 {
     margin: 10px;
 }
 
-nav {
-    /* set the float positioning for the nav buttons so they stay to the right of the header */
-    float: right;
-}
+
 
 #bio {
     /* id to single out the picture for the short bio */
